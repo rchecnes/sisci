@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}
+            <!-- Bootstrap 3.3.6 -->
+            <link href="../Assets/css/bootstrap.min.css" rel="stylesheet">
+            <!-- Font Awesome -->
+            <link rel="stylesheet" href="../Assets/font-awesome/4.5.0/css/font-awesome.min.css" />
+            <!-- Mi barrio css -->
+            <link rel="stylesheet" href="../Assets/css/mibarrio.css">
+        {% endblock %}
+    </head>
+    <body class="hold-transition skin-blue sidebar-mini">
+      <!-- Main content -->
+      <header class="header-login">
+        <div class="container"><h2><i class="fa fa-cloud"></i>&nbsp;SISCI</h2></div>
+      </header>
+      <section class="container-login">
+        {% block body %}{% endblock %}
+      </section>
+      <footer class="main-footer footer.login">
+        
+      </footer>
+
+      {% block codeScript %}
+        
+
+      {% endblock %}
+    </body>
+</html>
