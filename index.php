@@ -1,5 +1,5 @@
 <?php
-//Configuración global
+/*//Configuración global
 require_once 'Config/global.php';
  
 //Base para los controladores
@@ -15,6 +15,27 @@ if(isset($_GET["controller"])){
 }else{
     $controllerObj=cargarControlador(CONTROLADOR_DEFECTO);
     lanzarAccion($controllerObj);
+}*/
+
+//SEGUNDA FORMA
+$url = isset($_GET['url'])?$_GET['url']:"Index/index";
+$url = explode("/", $url);
+
+$controller = "";
+$method = "";
+
+if (isset($url[0])) {
+	$controller = $url[0];
 }
+
+if (isset($url[1])) {
+	if ($url[1]!='') {
+		$method = $url[1];
+	}
+}
+
+print_r($controller);
+print_r($method);
+
 ?>
 
