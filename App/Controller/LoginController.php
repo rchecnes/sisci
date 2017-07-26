@@ -10,7 +10,7 @@ class LoginController extends Controller{
     public function index(){
         
         
-        $this->view('Login/index.twig.html',array());
+        $this->render('Login/index.twig.html',array());
     }
     
     public function validar(){

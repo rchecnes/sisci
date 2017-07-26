@@ -1,31 +1,13 @@
 <?php
 class Controller{
  
-    /*public function __construct() {
-        require_once 'EntidadBase.php';
-        require_once 'ModeloBase.php';
-         
-        //Incluir todos los modelos
-        foreach(glob("model/*.php") as $file){
-            require_once $file;
-        }
-    }*/
-     
-    //Plugins y funcionalidades
-     
-/*
-* Este método lo que hace es recibir los datos del controlador en forma de array
-* los recorre y crea una variable dinámica con el indice asociativo y le da el 
-* valor que contiene dicha posición del array, luego carga los helpers para las
-* vistas y carga la vista que le llega como parámetro. En resumen un método para
-* renderizar vistas.
-*/  
+    
     public function __construct() {
 
     }
 
 
-    public function view($view, $data){
+    public function render($view, $data){
         
         require_once 'Vendor/Twig/Autoloader.php';
         Twig_Autoloader::register();
@@ -38,38 +20,23 @@ class Controller{
         
         echo $template->render($data);
     }
+
      
     public function redirect($controller,$method){
 
+        $base_url = '';
+        $base_folder = strtolower(str_replace(basename($_SERVER['SCRIPT_NAME']), '', $_SERVER['SCRIPT_NAME']));
 
-        
-        //header("Location:".$controller."/".$method."/");
+        if (isset($_SERVER['HTTP_HOST']))
+        {
+            $base_url = isset($_SERVER['HTTPS']) && strtolower($_SERVER['HTTPS']) !== 'off' ? 'https' : 'http';
+            $base_url .= '://'. $_SERVER['HTTP_HOST'];
+            $base_url .= $base_folder;
+        } 
 
-        header('Location: /'.$controller.'/'.$method);
+        header('Location:'.sprintf("Location: %s%s", $base_url, $controller.'/'.$method));
 
-        /*$controller = $controller.'Controller';
-
-        $controllerPath = 'App/Controller/'.$controller.'.php';
-
-        if (file_exists($controllerPath)) {
-
-            require_once($controllerPath);
-
-            $controller = new $controller();
-            
-            if (isset($method)) {
-                if (method_exists($controller, $method)) {
-                    $controller->{$method}();
-                }else{
-                    echo "Error, el méthodo ".$method." no existe";
-                }
-            }
-        }else{
-            echo "Error en la direccion no existe el controlador";
-        }*/
     }
-     
-    //Métodos para los controladores
  
 }
 ?>
