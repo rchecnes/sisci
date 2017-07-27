@@ -2,7 +2,7 @@
 class Conectar
 {
     private $driver;
-    private $host
+    private $host;
     private $user;
     private $pass;
     private $database;
@@ -11,7 +11,7 @@ class Conectar
     public function __construct()
     {
 
-        $db_cfg = require_once '../config/parameters.php';
+        $db_cfg = require_once 'Config/parameters.php';
 
         $this->driver  = $db_cfg["driver"];
         $this->host    = $db_cfg["host"];
@@ -25,7 +25,7 @@ class Conectar
          
         if($this->driver=="mysql" || $this->driver==null){
             $con=new mysqli($this->host, $this->user, $this->pass, $this->database);
-            $con->query("SET NAMES '".$this->charset."'");
+            //$con->query("SET NAMES '".$this->charset."'");
         }
          
         return $con;

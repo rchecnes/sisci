@@ -18,7 +18,28 @@ class LoginController extends Controller{
         //echo $_SERVER['HTTP_HOST'];
        //echo "Hola en esta seccion se valida el acceso al usuario";
        //$this->redirect('Login','home');
-       $this->render('Login/home.twig.html',array());
+
+        //print_r($this->dbpdo());
+
+       //$this->render('Login/home.twig.html',array());
+
+        $usuario = $_POST['usuario'];
+        $password = md5($_POST['password']);
+
+        $sql = $this->db()->query("SELECT * FROM usuario WHERE usuario='$usuario' AND salt='$password'");
+ 
+        if($row = $sql->fetch_object()) {
+         
+           //print_r($row->salt);
+
+           $this->redirect('Login','home');
+
+        }else{
+
+            $this->redirect('Login','index');
+        }
+
+        
     }
 
     

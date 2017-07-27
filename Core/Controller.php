@@ -1,11 +1,25 @@
 <?php
 class Controller{
- 
+    
+    private $db;
+    private $conectar;
+    private $dbpdo;
     
     public function __construct() {
 
+        require_once 'Conectar.php';
+        $this->conectar= new Conectar();
+        $this->db      = $this->conectar->conexion();
+        $this->dbpdo   = $this->conectar->startFluent();
     }
 
+    public function db(){
+        return $this->db;
+    }
+
+    public function dbpdo(){
+        return $this->dbpdo;
+    }
 
     public function render($view, $data){
         
@@ -34,7 +48,9 @@ class Controller{
             $base_url .= $base_folder;
         } 
 
-        header('Location:'.sprintf("Location: %s%s", $base_url, $controller.'/'.$method));
+        header('Location:'.sprintf("Location: %s%s", $base_url, $controller.'/'.$method));exit();
+
+        ///echo sprintf("Location: %s%s", $base_url, $controller.'/'.$method);
 
     }
  

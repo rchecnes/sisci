@@ -23,7 +23,7 @@ if(isset($_GET["controller"])){
 require_once 'Config/global.php';
 
 $url = isset($_GET['url'])?$_GET['url']:CONTROLADOR_DEFECTO."/".ACCION_DEFECTO;
-
+//echo $url;
 $url = explode("/", $url);
 
 
