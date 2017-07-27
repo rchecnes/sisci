@@ -1,0 +1,352 @@
+[24-Jul-2017 14:45:15 America/Chicago] PHP Warning:  require_once(Core/ControladorBase.php): failed to open stream: No such file or directory in /home3/rchecnes/public_html/domains/sisci.worldapu.com/index.php on line 6
+[24-Jul-2017 14:45:15 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'Core/ControladorBase.php' (include_path='.:/opt/php56/lib/php') in /home3/rchecnes/public_html/domains/sisci.worldapu.com/index.php on line 6
+[24-Jul-2017 14:45:58 America/Chicago] PHP Warning:  require_once(controller/UsuariosController.php): failed to open stream: No such file or directory in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php on line 12
+[24-Jul-2017 14:45:58 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'controller/UsuariosController.php' (include_path='.:/opt/php56/lib/php') in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php on line 12
+[24-Jul-2017 14:47:20 America/Chicago] PHP Warning:  require_once(controller/LoginCController.php): failed to open stream: No such file or directory in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php on line 12
+[24-Jul-2017 14:47:20 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'controller/LoginCController.php' (include_path='.:/opt/php56/lib/php') in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php on line 12
+[24-Jul-2017 14:48:02 America/Chicago] PHP Warning:  require_once(../Vendor/Twig/Autoloader.php): failed to open stream: No such file or directory in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Controller/LoginC.php on line 25
+[24-Jul-2017 14:48:02 America/Chicago] PHP Fatal error:  require_once(): Failed opening required '../Vendor/Twig/Autoloader.php' (include_path='.:/opt/php56/lib/php') in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Controller/LoginC.php on line 25
+[24-Jul-2017 14:48:54 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "../View" directory does not exist.' in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php:71
+Stack trace:
+#0 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(56): Twig_Loader_Filesystem->addPath('../View')
+#1 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(30): Twig_Loader_Filesystem->setPaths('../View')
+#2 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Controller/LoginC.php(29): Twig_Loader_Filesystem->__construct('../View')
+#3 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php(12): require_once('/home3/rchecnes...')
+#4 /home3/rchecnes/public_html/domains/sisci.worldapu.com/index.php(16): cargarControlador('Login')
+#5 {main}
+  thrown in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php on line 71
+[24-Jul-2017 14:49:17 America/Chicago] PHP Fatal error:  Class 'LoginController' not found in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php on line 13
+[24-Jul-2017 14:49:49 America/Chicago] PHP Fatal error:  Class 'LoginC' not found in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php on line 13
+[24-Jul-2017 14:51:08 America/Chicago] PHP Fatal error:  Class 'LoginC' not found in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php on line 13
+[24-Jul-2017 14:55:46 America/Chicago] PHP Fatal error:  Class 'LoginC' not found in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php on line 13
+[24-Jul-2017 14:56:31 America/Chicago] PHP Fatal error:  Cannot access parent:: when current class scope has no parent in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Controller/LoginC.php on line 11
+[24-Jul-2017 14:57:00 America/Chicago] PHP Fatal error:  Cannot access parent:: when current class scope has no parent in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Controller/LoginC.php on line 11
+[24-Jul-2017 14:58:34 America/Chicago] PHP Fatal error:  Call to undefined method LoginC::index() in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php on line 19
+[24-Jul-2017 14:59:25 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Controller/LoginC.php on line 21
+[24-Jul-2017 14:59:59 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "../View" directory does not exist.' in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php:71
+Stack trace:
+#0 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(56): Twig_Loader_Filesystem->addPath('../View')
+#1 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(30): Twig_Loader_Filesystem->setPaths('../View')
+#2 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Controller/LoginC.php(24): Twig_Loader_Filesystem->__construct('../View')
+#3 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php(19): LoginC->index()
+#4 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php(26): cargarAccion(Object(LoginC), 'index')
+#5 /home3/rchecnes/public_html/domains/sisci.worldapu.com/index.php(17): lanzarAccion(Object(LoginC))
+#6 {main}
+  thrown in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php on line 71
+[24-Jul-2017 15:00:24 America/Chicago] PHP Warning:  require_once(../Vendor/Twig/Autoloader.php): failed to open stream: No such file or directory in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Controller/LoginC.php on line 20
+[24-Jul-2017 15:00:24 America/Chicago] PHP Fatal error:  require_once(): Failed opening required '../Vendor/Twig/Autoloader.php' (include_path='.:/opt/php56/lib/php') in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Controller/LoginC.php on line 20
+[24-Jul-2017 15:00:47 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "../View" directory does not exist.' in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php:71
+Stack trace:
+#0 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(56): Twig_Loader_Filesystem->addPath('../View')
+#1 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(30): Twig_Loader_Filesystem->setPaths('../View')
+#2 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Controller/LoginC.php(24): Twig_Loader_Filesystem->__construct('../View')
+#3 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php(19): LoginC->index()
+#4 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php(26): cargarAccion(Object(LoginC), 'index')
+#5 /home3/rchecnes/public_html/domains/sisci.worldapu.com/index.php(17): lanzarAccion(Object(LoginC))
+#6 {main}
+  thrown in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php on line 71
+[24-Jul-2017 17:43:48 America/Chicago] PHP Warning:  require_once(Controller/LoginC.php): failed to open stream: No such file or directory in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php on line 12
+[24-Jul-2017 17:43:48 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'Controller/LoginC.php' (include_path='.:/opt/php56/lib/php') in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php on line 12
+[24-Jul-2017 17:45:02 America/Chicago] PHP Warning:  require_once(Controller/LoginC.php): failed to open stream: No such file or directory in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php on line 12
+[24-Jul-2017 17:45:02 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'Controller/LoginC.php' (include_path='.:/opt/php56/lib/php') in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php on line 12
+[24-Jul-2017 17:45:05 America/Chicago] PHP Warning:  require_once(Controller/LoginC.php): failed to open stream: No such file or directory in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php on line 12
+[24-Jul-2017 17:45:05 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'Controller/LoginC.php' (include_path='.:/opt/php56/lib/php') in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php on line 12
+[24-Jul-2017 17:45:25 America/Chicago] PHP Warning:  require_once(Controller/LoginC.php): failed to open stream: No such file or directory in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php on line 12
+[24-Jul-2017 17:45:25 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'Controller/LoginC.php' (include_path='.:/opt/php56/lib/php') in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php on line 12
+[24-Jul-2017 17:45:28 America/Chicago] PHP Warning:  require_once(Controller/LoginC.php): failed to open stream: No such file or directory in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php on line 12
+[24-Jul-2017 17:45:28 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'Controller/LoginC.php' (include_path='.:/opt/php56/lib/php') in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php on line 12
+[24-Jul-2017 17:50:18 America/Chicago] PHP Warning:  require_once(Controller/LoginC.php): failed to open stream: No such file or directory in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php on line 12
+[24-Jul-2017 17:50:18 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'Controller/LoginC.php' (include_path='.:/opt/php56/lib/php') in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php on line 12
+[24-Jul-2017 17:50:59 America/Chicago] PHP Warning:  require_once(../App/Controller/LoginC.php): failed to open stream: No such file or directory in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php on line 12
+[24-Jul-2017 17:50:59 America/Chicago] PHP Fatal error:  require_once(): Failed opening required '../App/Controller/LoginC.php' (include_path='.:/opt/php56/lib/php') in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php on line 12
+[24-Jul-2017 17:51:14 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "View" directory does not exist.' in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php:71
+Stack trace:
+#0 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(56): Twig_Loader_Filesystem->addPath('View')
+#1 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(30): Twig_Loader_Filesystem->setPaths('View')
+#2 /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginC.php(17): Twig_Loader_Filesystem->__construct('View')
+#3 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php(19): LoginC->index()
+#4 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php(26): cargarAccion(Object(LoginC), 'index')
+#5 /home3/rchecnes/public_html/domains/sisci.worldapu.com/index.php(17): lanzarAccion(Object(LoginC))
+#6 {main}
+  thrown in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php on line 71
+[24-Jul-2017 17:51:42 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "../View" directory does not exist.' in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php:71
+Stack trace:
+#0 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(56): Twig_Loader_Filesystem->addPath('../View')
+#1 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(30): Twig_Loader_Filesystem->setPaths('../View')
+#2 /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginC.php(17): Twig_Loader_Filesystem->__construct('../View')
+#3 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php(19): LoginC->index()
+#4 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php(26): cargarAccion(Object(LoginC), 'index')
+#5 /home3/rchecnes/public_html/domains/sisci.worldapu.com/index.php(17): lanzarAccion(Object(LoginC))
+#6 {main}
+  thrown in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php on line 71
+[24-Jul-2017 17:51:45 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "../View" directory does not exist.' in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php:71
+Stack trace:
+#0 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(56): Twig_Loader_Filesystem->addPath('../View')
+#1 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(30): Twig_Loader_Filesystem->setPaths('../View')
+#2 /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginC.php(17): Twig_Loader_Filesystem->__construct('../View')
+#3 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php(19): LoginC->index()
+#4 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php(26): cargarAccion(Object(LoginC), 'index')
+#5 /home3/rchecnes/public_html/domains/sisci.worldapu.com/index.php(17): lanzarAccion(Object(LoginC))
+#6 {main}
+  thrown in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php on line 71
+[24-Jul-2017 17:51:53 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "../../View" directory does not exist.' in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php:71
+Stack trace:
+#0 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(56): Twig_Loader_Filesystem->addPath('../../View')
+#1 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(30): Twig_Loader_Filesystem->setPaths('../../View')
+#2 /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginC.php(17): Twig_Loader_Filesystem->__construct('../../View')
+#3 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php(19): LoginC->index()
+#4 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php(26): cargarAccion(Object(LoginC), 'index')
+#5 /home3/rchecnes/public_html/domains/sisci.worldapu.com/index.php(17): lanzarAccion(Object(LoginC))
+#6 {main}
+  thrown in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php on line 71
+[24-Jul-2017 17:51:55 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "../../View" directory does not exist.' in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php:71
+Stack trace:
+#0 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(56): Twig_Loader_Filesystem->addPath('../../View')
+#1 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(30): Twig_Loader_Filesystem->setPaths('../../View')
+#2 /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginC.php(17): Twig_Loader_Filesystem->__construct('../../View')
+#3 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php(19): LoginC->index()
+#4 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php(26): cargarAccion(Object(LoginC), 'index')
+#5 /home3/rchecnes/public_html/domains/sisci.worldapu.com/index.php(17): lanzarAccion(Object(LoginC))
+#6 {main}
+  thrown in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php on line 71
+[24-Jul-2017 17:51:56 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "../../View" directory does not exist.' in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php:71
+Stack trace:
+#0 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(56): Twig_Loader_Filesystem->addPath('../../View')
+#1 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(30): Twig_Loader_Filesystem->setPaths('../../View')
+#2 /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginC.php(17): Twig_Loader_Filesystem->__construct('../../View')
+#3 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php(19): LoginC->index()
+#4 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php(26): cargarAccion(Object(LoginC), 'index')
+#5 /home3/rchecnes/public_html/domains/sisci.worldapu.com/index.php(17): lanzarAccion(Object(LoginC))
+#6 {main}
+  thrown in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php on line 71
+[24-Jul-2017 17:52:15 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "./View" directory does not exist.' in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php:71
+Stack trace:
+#0 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(56): Twig_Loader_Filesystem->addPath('./View')
+#1 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(30): Twig_Loader_Filesystem->setPaths('./View')
+#2 /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginC.php(17): Twig_Loader_Filesystem->__construct('./View')
+#3 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php(19): LoginC->index()
+#4 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php(26): cargarAccion(Object(LoginC), 'index')
+#5 /home3/rchecnes/public_html/domains/sisci.worldapu.com/index.php(17): lanzarAccion(Object(LoginC))
+#6 {main}
+  thrown in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php on line 71
+[24-Jul-2017 17:52:33 America/Chicago] PHP Warning:  require_once(Controller/LoginC.php): failed to open stream: No such file or directory in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php on line 12
+[24-Jul-2017 17:52:33 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'Controller/LoginC.php' (include_path='.:/opt/php56/lib/php') in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php on line 12
+[24-Jul-2017 17:52:57 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "View" directory does not exist.' in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php:71
+Stack trace:
+#0 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(56): Twig_Loader_Filesystem->addPath('View')
+#1 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(30): Twig_Loader_Filesystem->setPaths('View')
+#2 /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginC.php(17): Twig_Loader_Filesystem->__construct('View')
+#3 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php(19): LoginC->index()
+#4 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/ControllerFrontal.func.php(26): cargarAccion(Object(LoginC), 'index')
+#5 /home3/rchecnes/public_html/domains/sisci.worldapu.com/index.php(17): lanzarAccion(Object(LoginC))
+#6 {main}
+  thrown in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php on line 71
+[25-Jul-2017 09:33:50 America/Chicago] PHP Fatal error:  Class 'Controller' not found in /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginC.php on line 4
+[25-Jul-2017 09:58:09 America/Chicago] PHP Fatal error:  Class 'Controller' not found in /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginC.php on line 4
+[25-Jul-2017 09:58:15 America/Chicago] PHP Fatal error:  Class 'Controller' not found in /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginC.php on line 4
+[25-Jul-2017 10:14:14 America/Chicago] PHP Fatal error:  Class 'Controller' not found in /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginC.php on line 4
+[26-Jul-2017 09:16:11 America/Chicago] PHP Parse error:  syntax error, unexpected '$url' (T_VARIABLE) in /home3/rchecnes/public_html/domains/sisci.worldapu.com/index.php on line 24
+[26-Jul-2017 09:24:40 America/Chicago] PHP Fatal error:  Class 'LoginController' not found in /home3/rchecnes/public_html/domains/sisci.worldapu.com/index.php on line 46
+[26-Jul-2017 09:43:42 America/Chicago] PHP Fatal error:  Class 'Controller' not found in /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginController.php on line 3
+[26-Jul-2017 09:44:46 America/Chicago] PHP Fatal error:  Cannot call constructor in /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginController.php on line 7
+[26-Jul-2017 09:53:07 America/Chicago] PHP Catchable fatal error:  Argument 1 passed to Twig_Template::render() must be of the type array, string given, called in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php on line 46 and defined in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Template.php on line 193
+[26-Jul-2017 09:53:40 America/Chicago] PHP Catchable fatal error:  Argument 1 passed to Twig_Template::render() must be of the type array, string given, called in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php on line 46 and defined in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Template.php on line 193
+[26-Jul-2017 09:53:43 America/Chicago] PHP Catchable fatal error:  Argument 1 passed to Twig_Template::render() must be of the type array, string given, called in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php on line 46 and defined in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Template.php on line 193
+[26-Jul-2017 09:53:57 America/Chicago] PHP Catchable fatal error:  Argument 1 passed to Twig_Template::render() must be of the type array, string given, called in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php on line 46 and defined in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Template.php on line 193
+[26-Jul-2017 09:54:00 America/Chicago] PHP Catchable fatal error:  Argument 1 passed to Twig_Template::render() must be of the type array, string given, called in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php on line 46 and defined in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Template.php on line 193
+[26-Jul-2017 09:54:28 America/Chicago] PHP Parse error:  syntax error, unexpected '(', expecting variable (T_VARIABLE) in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php on line 28
+[26-Jul-2017 09:56:30 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'Unable to find template "./View/Login/index.twig.html" (looked into: ./App/View).' in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php:129
+Stack trace:
+#0 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(98): Twig_Loader_Filesystem->findTemplate('./View/Login/in...')
+#1 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Environment.php(259): Twig_Loader_Filesystem->getCacheKey('./View/Login/in...')
+#2 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Environment.php(294): Twig_Environment->getTemplateClass('./View/Login/in...')
+#3 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php(45): Twig_Environment->loadTemplate('./View/Login/in...')
+#4 /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginController.php(21): Controller->view('Login/index.twi...', Array)
+#5 /home3/rchecnes/public_html/domains/sisci in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php on line 129
+[26-Jul-2017 09:57:03 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'Unable to find template "./View/Login/index.twig.html" (looked into: App/View).' in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php:129
+Stack trace:
+#0 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(98): Twig_Loader_Filesystem->findTemplate('./View/Login/in...')
+#1 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Environment.php(259): Twig_Loader_Filesystem->getCacheKey('./View/Login/in...')
+#2 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Environment.php(294): Twig_Environment->getTemplateClass('./View/Login/in...')
+#3 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php(45): Twig_Environment->loadTemplate('./View/Login/in...')
+#4 /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginController.php(21): Controller->view('Login/index.twi...', Array)
+#5 /home3/rchecnes/public_html/domains/sisci.w in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php on line 129
+[26-Jul-2017 09:57:23 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'Unable to find template "./View/Login/index.twig.html" (looked into: App/View).' in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php:129
+Stack trace:
+#0 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(98): Twig_Loader_Filesystem->findTemplate('./View/Login/in...')
+#1 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Environment.php(259): Twig_Loader_Filesystem->getCacheKey('./View/Login/in...')
+#2 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Environment.php(294): Twig_Environment->getTemplateClass('./View/Login/in...')
+#3 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php(45): Twig_Environment->loadTemplate('./View/Login/in...')
+#4 /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginController.php(21): Controller->view('Login/index.twi...', Array)
+#5 /home3/rchecnes/public_html/domains/sisci.w in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php on line 129
+[26-Jul-2017 09:57:25 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'Unable to find template "./View/Login/index.twig.html" (looked into: App/View).' in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php:129
+Stack trace:
+#0 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(98): Twig_Loader_Filesystem->findTemplate('./View/Login/in...')
+#1 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Environment.php(259): Twig_Loader_Filesystem->getCacheKey('./View/Login/in...')
+#2 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Environment.php(294): Twig_Environment->getTemplateClass('./View/Login/in...')
+#3 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php(45): Twig_Environment->loadTemplate('./View/Login/in...')
+#4 /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginController.php(21): Controller->view('Login/index.twi...', Array)
+#5 /home3/rchecnes/public_html/domains/sisci.w in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php on line 129
+[26-Jul-2017 09:57:28 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'Unable to find template "./View/Login/index.twig.html" (looked into: App/View).' in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php:129
+Stack trace:
+#0 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(98): Twig_Loader_Filesystem->findTemplate('./View/Login/in...')
+#1 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Environment.php(259): Twig_Loader_Filesystem->getCacheKey('./View/Login/in...')
+#2 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Environment.php(294): Twig_Environment->getTemplateClass('./View/Login/in...')
+#3 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php(45): Twig_Environment->loadTemplate('./View/Login/in...')
+#4 /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginController.php(21): Controller->view('Login/index.twi...', Array)
+#5 /home3/rchecnes/public_html/domains/sisci.w in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php on line 129
+[26-Jul-2017 09:57:51 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'Unable to find template "View/Login/index.twig.html" (looked into: App/View).' in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php:129
+Stack trace:
+#0 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(98): Twig_Loader_Filesystem->findTemplate('View/Login/inde...')
+#1 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Environment.php(259): Twig_Loader_Filesystem->getCacheKey('View/Login/inde...')
+#2 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Environment.php(294): Twig_Environment->getTemplateClass('View/Login/inde...')
+#3 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php(45): Twig_Environment->loadTemplate('View/Login/inde...')
+#4 /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginController.php(21): Controller->view('Login/index.twi...', Array)
+#5 /home3/rchecnes/public_html/domains/sisci.wor in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php on line 129
+[26-Jul-2017 09:57:54 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'Unable to find template "View/Login/index.twig.html" (looked into: App/View).' in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php:129
+Stack trace:
+#0 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(98): Twig_Loader_Filesystem->findTemplate('View/Login/inde...')
+#1 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Environment.php(259): Twig_Loader_Filesystem->getCacheKey('View/Login/inde...')
+#2 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Environment.php(294): Twig_Environment->getTemplateClass('View/Login/inde...')
+#3 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php(45): Twig_Environment->loadTemplate('View/Login/inde...')
+#4 /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginController.php(21): Controller->view('Login/index.twi...', Array)
+#5 /home3/rchecnes/public_html/domains/sisci.wor in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php on line 129
+[26-Jul-2017 09:58:30 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'Unable to find template "App/View/Login/index.twig.html" (looked into: App/View).' in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php:129
+Stack trace:
+#0 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(98): Twig_Loader_Filesystem->findTemplate('App/View/Login/...')
+#1 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Environment.php(259): Twig_Loader_Filesystem->getCacheKey('App/View/Login/...')
+#2 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Environment.php(294): Twig_Environment->getTemplateClass('App/View/Login/...')
+#3 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php(45): Twig_Environment->loadTemplate('App/View/Login/...')
+#4 /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginController.php(21): Controller->view('Login/index.twi...', Array)
+#5 /home3/rchecnes/public_html/domains/sisci in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php on line 129
+[26-Jul-2017 09:58:51 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'Unable to find template "./App/View/Login/index.twig.html" (looked into: App/View).' in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php:129
+Stack trace:
+#0 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(98): Twig_Loader_Filesystem->findTemplate('./App/View/Logi...')
+#1 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Environment.php(259): Twig_Loader_Filesystem->getCacheKey('./App/View/Logi...')
+#2 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Environment.php(294): Twig_Environment->getTemplateClass('./App/View/Logi...')
+#3 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php(45): Twig_Environment->loadTemplate('./App/View/Logi...')
+#4 /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginController.php(21): Controller->view('Login/index.twi...', Array)
+#5 /home3/rchecnes/public_html/domains/sis in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php on line 129
+[26-Jul-2017 09:59:17 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'Unable to find template "./App/View/Login/index.twig.html" (looked into: ./App/View).' in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php:129
+Stack trace:
+#0 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(98): Twig_Loader_Filesystem->findTemplate('./App/View/Logi...')
+#1 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Environment.php(259): Twig_Loader_Filesystem->getCacheKey('./App/View/Logi...')
+#2 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Environment.php(294): Twig_Environment->getTemplateClass('./App/View/Logi...')
+#3 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php(45): Twig_Environment->loadTemplate('./App/View/Logi...')
+#4 /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginController.php(21): Controller->view('Login/index.twi...', Array)
+#5 /home3/rchecnes/public_html/domains/s in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php on line 129
+[26-Jul-2017 10:01:56 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "View" directory does not exist.' in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php:71
+Stack trace:
+#0 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(56): Twig_Loader_Filesystem->addPath('View')
+#1 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(30): Twig_Loader_Filesystem->setPaths('View')
+#2 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php(40): Twig_Loader_Filesystem->__construct('View')
+#3 /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginController.php(21): Controller->view('Login/index.twi...', Array)
+#4 /home3/rchecnes/public_html/domains/sisci.worldapu.com/index.php(50): LoginController->index()
+#5 {main}
+  thrown in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php on line 71
+[26-Jul-2017 10:02:14 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "View" directory does not exist.' in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php:71
+Stack trace:
+#0 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(56): Twig_Loader_Filesystem->addPath('View')
+#1 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(30): Twig_Loader_Filesystem->setPaths('View')
+#2 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php(40): Twig_Loader_Filesystem->__construct('View')
+#3 /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginController.php(21): Controller->view('Login/index.twi...', Array)
+#4 /home3/rchecnes/public_html/domains/sisci.worldapu.com/index.php(50): LoginController->index()
+#5 {main}
+  thrown in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php on line 71
+[26-Jul-2017 10:02:16 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "View" directory does not exist.' in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php:71
+Stack trace:
+#0 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(56): Twig_Loader_Filesystem->addPath('View')
+#1 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(30): Twig_Loader_Filesystem->setPaths('View')
+#2 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php(40): Twig_Loader_Filesystem->__construct('View')
+#3 /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginController.php(21): Controller->view('Login/index.twi...', Array)
+#4 /home3/rchecnes/public_html/domains/sisci.worldapu.com/index.php(50): LoginController->index()
+#5 {main}
+  thrown in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php on line 71
+[26-Jul-2017 10:02:19 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "View" directory does not exist.' in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php:71
+Stack trace:
+#0 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(56): Twig_Loader_Filesystem->addPath('View')
+#1 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(30): Twig_Loader_Filesystem->setPaths('View')
+#2 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php(40): Twig_Loader_Filesystem->__construct('View')
+#3 /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginController.php(21): Controller->view('Login/index.twi...', Array)
+#4 /home3/rchecnes/public_html/domains/sisci.worldapu.com/index.php(50): LoginController->index()
+#5 {main}
+  thrown in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php on line 71
+[26-Jul-2017 10:03:49 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "View" directory does not exist.' in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php:71
+Stack trace:
+#0 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(56): Twig_Loader_Filesystem->addPath('View')
+#1 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(30): Twig_Loader_Filesystem->setPaths('View')
+#2 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php(40): Twig_Loader_Filesystem->__construct('View')
+#3 /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginController.php(21): Controller->view('Login/index.twi...', Array)
+#4 /home3/rchecnes/public_html/domains/sisci.worldapu.com/index.php(50): LoginController->index()
+#5 {main}
+  thrown in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php on line 71
+[26-Jul-2017 10:04:36 America/Chicago] PHP Warning:  require_once(../Vendor/Twig/Autoloader.php): failed to open stream: No such file or directory in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php on line 38
+[26-Jul-2017 10:04:36 America/Chicago] PHP Fatal error:  require_once(): Failed opening required '../Vendor/Twig/Autoloader.php' (include_path='.:/opt/php56/lib/php') in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php on line 38
+[26-Jul-2017 10:05:24 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "View" directory does not exist.' in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php:71
+Stack trace:
+#0 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(56): Twig_Loader_Filesystem->addPath('View')
+#1 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(30): Twig_Loader_Filesystem->setPaths('View')
+#2 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php(40): Twig_Loader_Filesystem->__construct('View')
+#3 /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginController.php(21): Controller->view('Login/index.twi...', Array)
+#4 /home3/rchecnes/public_html/domains/sisci.worldapu.com/index.php(50): LoginController->index()
+#5 {main}
+  thrown in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php on line 71
+[26-Jul-2017 10:05:41 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "./View" directory does not exist.' in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php:71
+Stack trace:
+#0 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(56): Twig_Loader_Filesystem->addPath('./View')
+#1 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(30): Twig_Loader_Filesystem->setPaths('./View')
+#2 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php(40): Twig_Loader_Filesystem->__construct('./View')
+#3 /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginController.php(21): Controller->view('Login/index.twi...', Array)
+#4 /home3/rchecnes/public_html/domains/sisci.worldapu.com/index.php(50): LoginController->index()
+#5 {main}
+  thrown in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php on line 71
+[26-Jul-2017 10:13:14 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginController.php:27) in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php on line 51
+[26-Jul-2017 10:13:57 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginController.php:27) in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php on line 51
+[26-Jul-2017 10:13:59 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginController.php:27) in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php on line 51
+[26-Jul-2017 10:14:43 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginController.php:27) in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php on line 51
+[26-Jul-2017 10:14:46 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginController.php:27) in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php on line 51
+[26-Jul-2017 14:16:29 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'Looks like you try to load a template outside configured directories (../App/Login/index.twig.html).' in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php:148
+Stack trace:
+#0 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(121): Twig_Loader_Filesystem->validateName('../App/Login/in...')
+#1 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(98): Twig_Loader_Filesystem->findTemplate('../App/Login/in...')
+#2 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Environment.php(259): Twig_Loader_Filesystem->getCacheKey('../App/Login/in...')
+#3 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Environment.php(294): Twig_Environment->getTemplateClass('../App/Login/in...')
+#4 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php(45): Twig_Environment->loadTemplate('../App/Login/in...')
+#5 /home3/rc in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php on line 148
+[26-Jul-2017 14:17:57 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'Looks like you try to load a template outside configured directories (../App/Login/index.twig.html).' in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php:148
+Stack trace:
+#0 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(121): Twig_Loader_Filesystem->validateName('../App/Login/in...')
+#1 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(98): Twig_Loader_Filesystem->findTemplate('../App/Login/in...')
+#2 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Environment.php(259): Twig_Loader_Filesystem->getCacheKey('../App/Login/in...')
+#3 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Environment.php(294): Twig_Environment->getTemplateClass('../App/Login/in...')
+#4 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php(45): Twig_Environment->loadTemplate('../App/Login/in...')
+#5 /home3/rc in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php on line 148
+[26-Jul-2017 14:19:25 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "../App/View" directory does not exist.' in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php:71
+Stack trace:
+#0 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(56): Twig_Loader_Filesystem->addPath('../App/View')
+#1 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php(30): Twig_Loader_Filesystem->setPaths('../App/View')
+#2 /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php(40): Twig_Loader_Filesystem->__construct('../App/View')
+#3 /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginController.php(21): Controller->view()
+#4 /home3/rchecnes/public_html/domains/sisci.worldapu.com/index.php(50): LoginController->index()
+#5 {main}
+  thrown in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Vendor/Twig/Loader/Filesystem.php on line 71
+[26-Jul-2017 14:22:00 America/Chicago] PHP Fatal error:  Class 'Controller' not found in /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginController.php on line 4
+[26-Jul-2017 14:28:56 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginController.php:18) in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php on line 43
+[26-Jul-2017 14:30:11 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginController.php:18) in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php on line 43
+[26-Jul-2017 14:31:15 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginController.php:18) in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php on line 43
+[26-Jul-2017 14:31:28 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginController.php:18) in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php on line 43
+[26-Jul-2017 14:34:24 America/Chicago] PHP Fatal error:  Class 'Login' not found in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php on line 50
+[26-Jul-2017 14:34:56 America/Chicago] PHP Fatal error:  Class 'Login' not found in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php on line 51
+[26-Jul-2017 14:35:13 America/Chicago] PHP Fatal error:  Class 'Login' not found in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php on line 51
+[26-Jul-2017 14:39:49 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginController.php:17) in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php on line 46
+[26-Jul-2017 14:41:06 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginController.php:17) in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php on line 46
+[26-Jul-2017 14:41:24 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/rchecnes/public_html/domains/sisci.worldapu.com/App/Controller/LoginController.php:18) in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php on line 46
+[26-Jul-2017 17:51:19 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php:44) in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php on line 48
+[26-Jul-2017 17:52:53 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php:44) in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php on line 48
+[26-Jul-2017 17:52:58 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php:44) in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php on line 48
+[26-Jul-2017 17:53:18 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php:44) in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php on line 47
+[26-Jul-2017 17:53:18 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php:44) in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php on line 48
+[26-Jul-2017 17:58:54 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/rchecnes/public_html/domains/sisci.worldapu.com/index.php:26) in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php on line 49
+[26-Jul-2017 18:04:52 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/rchecnes/public_html/domains/sisci.worldapu.com/index.php:26) in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php on line 49
+[26-Jul-2017 18:05:39 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/rchecnes/public_html/domains/sisci.worldapu.com/index.php:26) in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php on line 49
+[26-Jul-2017 18:05:59 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/rchecnes/public_html/domains/sisci.worldapu.com/index.php:26) in /home3/rchecnes/public_html/domains/sisci.worldapu.com/Core/Controller.php on line 49

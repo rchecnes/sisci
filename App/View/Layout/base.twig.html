@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <meta name="description" content="with draggable and editable events" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+        {% block stylesheets %}
+        <!-- bootstrap & fontawesome -->
+        <link rel="stylesheet" type="text/css" href="../../Assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../Assets/font-awesome/4.5.0/css/font-awesome.min.css" />
+        <!-- page specific plugin styles -->
+        <link rel="stylesheet" href="../../Assets/css/jquery-ui.min.css" />
+        <!-- text fonts -->
+        <link rel="stylesheet" href="../../Assets/css/fonts.googleapis.com.css" />
+        
+        {% endblock %}
+        <!-- ace styles -->
+        <link rel="stylesheet" href="../../Assets/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
+        <!-- Mi barrio css -->
+        <link rel="stylesheet" href="../../Assets/css/mibarrio.css">
+        <!--<link rel="icon" type="image/x-icon" href="favicon.ico" />-->
+
+    </head>
+    <body class="no-skin">
+        
+        <div id="navbar" class="navbar navbar-default ace-save-state">
+            <div class="navbar-container ace-save-state" id="navbar-container">
+                <button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler" data-target="#sidebar">
+                    <span class="sr-only">Toggle sidebar</span>
+
+                    <span class="icon-bar"></span>
+
+                    <span class="icon-bar"></span>
+
+                    <span class="icon-bar"></span>
+                </button>
+
+                <div class="navbar-header pull-left">
+                    <a href="index.html" class="navbar-brand">
+                        <small>
+                            <i class="fa fa-cloud"></i>
+                            Mi Asociación
+                        </small>
+                    </a>
+                </div>
+                <div class="navbar-buttons navbar-header pull-right" role="navigation">
+                    <ul class="nav ace-nav">
+                        <li class="grey dropdown-modal">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <i class="ace-icon fa fa-tasks"></i>
+                                <span class="badge badge-grey">1</span>
+                            </a>
+
+                            <ul class="dropdown-menu-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
+                                <li class="dropdown-header">
+                                    <i class="ace-icon fa fa-check"></i>
+                                    Notificación
+                                </li>
+
+                                <li class="dropdown-content">
+                                    <ul class="dropdown-menu dropdown-navbar">
+                                        <li>
+                                            <a href="#">
+                                                <div class="clearfix">
+                                                    <span class="pull-left">Hay un nuevo evento</span>
+                                                    <span class="pull-right">65%</span>
+                                                </div>
+
+                                                <div class="progress progress-mini">
+                                                    <div style="width:65%" class="progress-bar"></div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="light-blue dropdown-modal">
+                                    <a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                                        <img class="nav-user-photo" src="{#{asset('public/img/foto-richard.png')}#}" alt="Jason's Photo" />
+                                        <span class="user-info">
+                                            <small>{#{ app.user.firstname }#}</small>
+                                            
+                                        </span>
+                                        {#{%set user= app.session.get('user')%}#}
+                                        
+                                        <i class="ace-icon fa fa-caret-down"></i>
+                                    </a>
+
+                                    <ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+                                        <li>
+                                            <a href="javascript:location.reload()">
+                                                <i class="ace-icon fa fa-refresh"></i>
+                                                Actualizar
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{#{ path('persona_editperfil', { 'id': app.session.get('persona_id') }) }#}">
+                                                <i class="ace-icon fa fa-user"></i>
+                                                Editar Información
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{#{ path('acceso_change_password',{ 'id': app.session.get('usuario_id') }) }#}">
+                                                <i class="ace-icon fa fa-key"></i>
+                                                Cambiar Contraseña
+                                            </a>
+                                        </li>
+                                        <li class="divider"></li>
+
+                                        <li>
+                                            <a href="{#{path('cerrar_sesion')}#}">
+                                                <i class="ace-icon fa fa-power-off"></i>
+                                                Cerra Sesión
+                                            </a>
+                                        </li>
+                                    </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-container ace-save-state" id="main-container">
+            <div id="sidebar" class="sidebar responsive ace-save-state">
+
+                <div class="sidebar-shortcuts" id="sidebar-shortcuts">
+                    <div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
+                        <button class="btn btn-success">
+                            <i class="ace-icon fa fa-signal"></i>
+                        </button>
+
+                        <button class="btn btn-info">
+                            <i class="ace-icon fa fa-pencil"></i>
+                        </button>
+
+                        <button class="btn btn-warning">
+                            <i class="ace-icon fa fa-users"></i>
+                        </button>
+
+                        <button class="btn btn-danger">
+                            <i class="ace-icon fa fa-cogs"></i>
+                        </button>
+                    </div>
+
+                    <div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
+                        <span class="btn btn-success"></span>
+
+                        <span class="btn btn-info"></span>
+
+                        <span class="btn btn-warning"></span>
+
+                        <span class="btn btn-danger"></span>
+                    </div>
+                </div><!-- /.sidebar-shortcuts -->
+
+                {#{getMenuXRol(0, app.session.get('rol_id'))|raw}#}
+                
+                
+            </div>
+            <div class="main-content">
+                <div class="main-content-inner">
+                    <div class="breadcrumbs ace-save-state" id="breadcrumbs"></div>
+                    <div class="page-content">
+                        <div class="page-header"><h1>{#{% if titulo is defined %}{{titulo}}{% else %}Sin título{% endif %}#}</h1></div>
+                        <div class="full-content">
+                            {% block body %}{% endblock %}
+                        </div>                        
+                    </div>            
+                </div>        
+            </div>
+        </div>
+        
+        {% block javascripts %}
+        <script type="text/javascript" src="./Assets/js/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="./Assets/js/bootstrap.min.js"></script>
+        <script src="./Assets/js/jquery-ui.min.js"></script>
+        <!-- ace scripts -->
+        <script src="./Assets/js/ace-elements.min.js"></script>
+        <script src="./Assets/js/ace.min.js"></script>
+        {% endblock %}
+    </body>
+</html>

@@ -17,7 +17,8 @@ class LoginController extends Controller{
         //echo $_SERVER['DOCUMENT_ROOT'];
         //echo $_SERVER['HTTP_HOST'];
        //echo "Hola en esta seccion se valida el acceso al usuario";
-       $this->redirect('Login','index');
+       //$this->redirect('Login','home');
+       $this->render('Login/home.twig.html',array());
     }
 
     
