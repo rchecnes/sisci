@@ -39,7 +39,9 @@
 {{ parent() }}
 <script type="text/javascript">
 
-    $('#form_login').validator()
+$(document).ready(function(){
+
+    $('#form_login').validator();
 
     $('#usuario, #password').on("keyup", function(e){
         if(e.keyCode == 13)
@@ -47,6 +49,8 @@
             $("#form_login").submit();
         }
     });
+});
+    
 
 </script>
 {% endblock %}
