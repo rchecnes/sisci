@@ -48,9 +48,21 @@ class Controller{
             $base_url .= $base_folder;
         } 
 
-        header('Location:'.sprintf("Location: %s%s", $base_url, $controller.'/'.$method));exit();
+        //header('Location:'.sprintf("Location: %s%s", $base_url, $controller.'/'.$method));
+        header('Location:'.sprintf("Location: %s%s", $base_url, 'index.php'));exit();
+    
+        //echo sprintf("%s%s", $base_url, $controller.'/'.$method);
+        /*if (headers_sent()) {
 
-        ///echo sprintf("Location: %s%s", $base_url, $controller.'/'.$method);
+            echo "<script>document.location.href='/".$controller.'/'.$method."'</script>";
+            //echo "Arriba:".$base_url.$controller.'/'.$method;
+        }else{
+            //echo "Llega";
+            //echo "Abajo:".$base_url.$controller.'/'.$method;
+            header("location: ".$controller.'/'.$method);
+        }*/
+
+        //exit();
 
     }
  

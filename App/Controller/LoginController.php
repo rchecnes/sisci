@@ -32,11 +32,13 @@ class LoginController extends Controller{
          
            //print_r($row->salt);
 
-           $this->redirect('Login','home');
+           $this->redirect('Home','index');
+           //echo "Hola ya llegue arriba";
 
         }else{
-
+            //echo "Llega a falso";
             $this->redirect('Login','index');
+            //echo "Hola ya llegue abajo";
         }
 
         
