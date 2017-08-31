@@ -10,7 +10,7 @@ class Controller{
         require_once 'Conectar.php';
         $this->conectar= new Conectar();
         $this->db      = $this->conectar->conexion();
-        $this->dbpdo   = $this->conectar->startFluent();
+        //$this->dbpdo   = $this->conectar->startFluent();
     }
 
     public function db(){
@@ -34,11 +34,10 @@ class Controller{
         
         echo $template->render($data);
     }
-
      
     public function redirect($controller,$method){
 
-        $base_url = '';
+        /*$base_url = '';
         $base_folder = strtolower(str_replace(basename($_SERVER['SCRIPT_NAME']), '', $_SERVER['SCRIPT_NAME']));
 
         if (isset($_SERVER['HTTP_HOST']))
@@ -46,11 +45,10 @@ class Controller{
             $base_url = isset($_SERVER['HTTPS']) && strtolower($_SERVER['HTTPS']) !== 'off' ? 'https' : 'http';
             $base_url .= '://'. $_SERVER['HTTP_HOST'];
             $base_url .= $base_folder;
-        } 
+        }*/
 
-        header('Location:'.sprintf("Location: %s%s", $base_url, $controller.'/'.$method));exit();
-
-        ///echo sprintf("Location: %s%s", $base_url, $controller.'/'.$method);
+        header("Location: index.php?url=".$controller.'/'.$method);
+        exit();
 
     }
  

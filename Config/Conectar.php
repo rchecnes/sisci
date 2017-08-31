@@ -16,6 +16,9 @@ class Conexion
         $this->bd = $bd;
         $this->cn = new mysqli($this->servidor, $this->usuario, $this->password, $this->bd);
     }
+    public function conexion(){
+        return $this->cn;
+    }
     public function dbExecute($query)
     {
         $this->rs = $this->cn->query($query);
@@ -37,9 +40,9 @@ class Conexion
         $value = mysqli_real_escape_string(htmlspecialchars($value));
         return $value;
     }
-    public function __destruct()
+    /*public function __destruct()
     {
         $this->cn;
-    }
+    }*/
 }
 ?>

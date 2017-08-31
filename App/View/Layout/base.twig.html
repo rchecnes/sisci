@@ -21,7 +21,6 @@
         <!-- Mi barrio css -->
         <link rel="stylesheet" href="../../Assets/css/mibarrio.css">
         <!--<link rel="icon" type="image/x-icon" href="favicon.ico" />-->
-
     </head>
     <body class="no-skin">
         
@@ -41,7 +40,7 @@
                     <a href="index.html" class="navbar-brand">
                         <small>
                             <i class="fa fa-cloud"></i>
-                            Mi Asociación
+                            Mi Asociación {{ app.session.get('nombre') }}
                         </small>
                     </a>
                 </div>
