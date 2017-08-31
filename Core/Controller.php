@@ -45,10 +45,30 @@ class Controller{
             $base_url = isset($_SERVER['HTTPS']) && strtolower($_SERVER['HTTPS']) !== 'off' ? 'https' : 'http';
             $base_url .= '://'. $_SERVER['HTTP_HOST'];
             $base_url .= $base_folder;
+<<<<<<< HEAD
         }*/
 
         header("Location: index.php?url=".$controller.'/'.$method);
         exit();
+=======
+        } 
+
+        //header('Location:'.sprintf("Location: %s%s", $base_url, $controller.'/'.$method));
+        header('Location:'.sprintf("Location: %s%s", $base_url, 'index.php'));exit();
+    
+        //echo sprintf("%s%s", $base_url, $controller.'/'.$method);
+        /*if (headers_sent()) {
+
+            echo "<script>document.location.href='/".$controller.'/'.$method."'</script>";
+            //echo "Arriba:".$base_url.$controller.'/'.$method;
+        }else{
+            //echo "Llega";
+            //echo "Abajo:".$base_url.$controller.'/'.$method;
+            header("location: ".$controller.'/'.$method);
+        }*/
+
+        //exit();
+>>>>>>> aab160d73134421b1e2c17a7d48481341f6f0c3f
 
     }
  

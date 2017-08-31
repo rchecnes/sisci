@@ -5,6 +5,12 @@ $url = isset($_GET['url'])?$_GET['url']:CONTROLADOR_DEFECTO."/".ACCION_DEFECTO;
 //echo $url;
 $url = explode("/", $url);
 
+<<<<<<< HEAD
+=======
+//var_dump($url);
+//echo APP_PATH;
+
+>>>>>>> aab160d73134421b1e2c17a7d48481341f6f0c3f
 $controller = "";
 $method = "";
 

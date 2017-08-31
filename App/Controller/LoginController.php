@@ -22,6 +22,7 @@ class LoginController extends Controller{
         
         if($row = $sql->fetch_object()) {
 
+<<<<<<< HEAD
           if ($row->activo == 1) {
 
             if (!session_start()) { session_start();}
@@ -34,6 +35,16 @@ class LoginController extends Controller{
             $row_p = $sql_p->fetch_object();
             $sql_r = $this->db()->query("SELECT * FROM rol WHERE id='$rol_id'");
             $row_r = $sql_r->fetch_object();
+=======
+           $this->redirect('Home','index');
+           //echo "Hola ya llegue arriba";
+
+        }else{
+            //echo "Llega a falso";
+            $this->redirect('Login','index');
+            //echo "Hola ya llegue abajo";
+        }
+>>>>>>> aab160d73134421b1e2c17a7d48481341f6f0c3f
 
             //Actualizamos el ultimo acceso
             $fecha = date('Y-m-d h:i:s');
